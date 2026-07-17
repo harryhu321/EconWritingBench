@@ -1,0 +1,53 @@
+[
+  {
+    "id": "intro_001",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Does air pollution causally reduce worker productivity in Chinese manufacturing cities?",
+      "background": "China is the world's largest manufacturing economy. Air pollution (PM2.5) is severe in many industrial cities. Existing studies show correlations between pollution and health, but causal evidence on labor productivity is limited in the Chinese context.",
+      "key_facts": [
+        "China accounts for 28% of global manufacturing output",
+        "Average urban PM2.5 in China was 47 μg/m³ in 2015, well above WHO guidelines (10 μg/m³)",
+        "Manufacturing sector employs over 100 million urban workers",
+        "A few US/European studies find pollution reduces productivity, but Chinese evidence is scarce"
+      ]
+    },
+    "reference_output": "China's manufacturing sector employs over 100 million urban workers and contributes nearly 28% of global manufacturing output, making it one of the most consequential labor markets for the global economy (World Bank, 2022). Yet Chinese manufacturing cities also rank among the most polluted in the world: average urban PM2.5 concentrations reached 47 μg/m³ in 2015—nearly five times the World Health Organization guideline of 10 μg/m³—and show considerable day-to-day volatility driven by coal combustion, industrial emissions, and meteorological conditions. If pollution systematically impairs worker performance, the economic costs of China's pollution burden extend well beyond documented health expenditures to encompass suppressed aggregate productivity.\n\nDespite a growing literature on pollution and health in China (e.g., Chen et al., 2013; Ebenstein et al., 2017), causal evidence linking ambient pollution to labor productivity in Chinese manufacturing remains scarce. Existing productivity studies either focus on agricultural or service-sector workers in the United States and Europe (Graff Zivin and Neidell, 2012; Chang et al., 2019), or rely on correlational designs that cannot rule out confounding from local economic cycles. This paper addresses these gaps by exploiting wind direction instruments—which generate plausibly exogenous variation in local PM2.5 unrelated to local economic activity—to identify the causal effect of pollution on daily factory output in a panel of 183 manufacturing firms across 24 Chinese cities over 2014–2019.",
+    "evaluation_focus": ["problem_importance", "literature_gap", "research_objective_clear", "hook_quality", "academic_tone"]
+  },
+  {
+    "id": "intro_002",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words) on the effect of house prices on fertility decisions in urban China.",
+    "input": {
+      "research_question": "How do rising house prices affect fertility decisions of urban households in China?",
+      "background": "China faces a demographic challenge with fertility rates below replacement level since the 1990s. The one-child policy was relaxed in 2015 (two-child) and 2021 (three-child). House prices in major cities have surged dramatically since 2005.",
+      "key_facts": [
+        "China's total fertility rate (TFR) fell to 1.09 in 2022",
+        "Average house prices in tier-1 cities rose by over 300% from 2005 to 2020",
+        "Housing costs represent the largest expenditure category for urban households",
+        "Existing literature on housing and fertility is mainly from Western contexts"
+      ]
+    },
+    "reference_output": "China faces an acute demographic challenge. The total fertility rate fell to 1.09 in 2022—among the lowest ever recorded for a major economy—despite successive relaxations of the one-child policy in 2015 and 2021 (National Bureau of Statistics, 2023). Policymakers have proposed a range of pro-natalist interventions, from childcare subsidies to extended parental leave, yet fertility has continued to decline. Identifying the structural determinants of this trend is essential for designing effective policy responses.\n\nRising housing costs represent a leading candidate explanation. Average house prices in China's tier-1 cities increased by more than 300% between 2005 and 2020, and housing now constitutes the single largest expenditure category in urban household budgets. Economic theory provides competing predictions: higher house prices may reduce fertility by raising the opportunity cost of having children and crowding out household resources; alternatively, homeowners may experience positive wealth effects that relax liquidity constraints on family formation. Empirical evidence from Western contexts suggests a predominantly negative relationship (Laeven and Popov, 2017; Dettling and Kearney, 2014), but these findings may not generalize to China, where homeownership rates are unusually high (over 90% in urban areas), mortgage structures differ, and cultural attitudes toward housing and childbearing interact in distinct ways. This paper exploits city-level land supply restrictions as an instrument for local house price variation to identify the causal effect of housing affordability on completed fertility and birth spacing among urban Chinese households.",
+    "evaluation_focus": ["policy_relevance", "theory_mechanism", "literature_gap", "instrument_previewed", "hook_quality"]
+  },
+  {
+    "id": "intro_003",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words) on whether digital payment adoption affects consumption inequality.",
+    "input": {
+      "research_question": "Does the adoption of mobile payment platforms (e.g., Alipay, WeChat Pay) reduce or exacerbate consumption inequality in China?",
+      "background": "Mobile payment adoption in China is among the highest in the world. Mobile payments may expand financial access for the poor but may also entrench advantages for tech-savvy urban users.",
+      "key_facts": [
+        "China processed over ¥526 trillion in mobile payments in 2022",
+        "Mobile payment penetration reached 86% of adults in urban areas vs. 54% in rural areas",
+        "Consumption inequality (Gini coefficient based on consumption) has remained elevated despite income growth",
+        "Few causal studies examine distributional effects of fintech adoption"
+      ]
+    },
+    "reference_output": "The diffusion of mobile payment platforms—most notably Alipay and WeChat Pay—has transformed retail commerce in China at a pace unmatched elsewhere: by 2022, the country processed over ¥526 trillion in mobile transactions annually, equivalent to roughly 45 times GDP (People's Bank of China, 2023). Proponents argue that frictionless digital payments expand financial inclusion by connecting underbanked households to credit markets, enabling small merchants to participate in formal commerce, and reducing transaction costs disproportionately for low-income users. Critics, however, warn of a digital divide: with mobile payment penetration standing at 86% among urban adults but only 54% among rural adults, access to the platform's complementary services—consumer credit, investment products, price comparison—may systematically advantage already-advantaged households.\n\nWhether fintech adoption ultimately narrows or widens consumption inequality is, therefore, an empirical question with first-order policy implications, yet causal evidence remains scarce. Existing work documents correlations between fintech indicators and economic outcomes (Hau et al., 2019; Li et al., 2021) but does not credibly address the endogeneity of platform adoption—households with higher consumption capacity are more likely to adopt digital payments in the first place. This paper exploits the staggered geographic rollout of Alipay's offline QR-code payment network between 2014 and 2019 as an instrument for local payment adoption to estimate the causal effect of mobile payment penetration on the consumption Gini across Chinese counties.",
+    "evaluation_focus": ["two_sided_argument", "endogeneity_previewed", "instrument_hinted", "literature_gap", "policy_stakes"]
+  }
+]
