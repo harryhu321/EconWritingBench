@@ -1,0 +1,56 @@
+[
+  {
+    "id": "reg_001",
+    "task": "regression_interpretation",
+    "instruction": "Write a result analysis paragraph (150-200 words) for the following OLS regression results. The dependent variable is log monthly earnings. Be precise about coefficients, standard errors, and significance levels. Do NOT imply causality unless the design supports it.",
+    "input": {
+      "context": "OLS regression of log monthly earnings on education and controls using CFPS 2018 urban sample (N=3,241).",
+      "table": {
+        "variables": ["Years of schooling", "Age", "Age squared", "Female", "CCP member", "Constant"],
+        "coefficients": [0.082, 0.045, -0.0005, -0.198, 0.134, 6.821],
+        "std_errors": [0.006, 0.008, 0.0001, 0.031, 0.042, 0.187],
+        "p_values": ["<0.001", "<0.001", "<0.001", "<0.001", "0.002", "<0.001"],
+        "r_squared": 0.312,
+        "notes": "Robust standard errors in parentheses. City fixed effects included."
+      }
+    },
+    "reference_output": "Table 2 presents OLS estimates of the earnings equation. Each additional year of schooling is associated with an 8.2 percentage point increase in monthly earnings (β = 0.082, SE = 0.006, p < 0.001), consistent with Mincerian returns to education documented in the Chinese urban labor market. Earnings follow an inverted-U profile over the life cycle: each additional year of age raises earnings by approximately 4.5%, while the negative and significant coefficient on age squared (β = −0.0005, p < 0.001) indicates that earnings growth decelerates as workers age. Female workers earn approximately 18.0% less than their male counterparts on an otherwise comparable basis (β = −0.198, SE = 0.031, p < 0.001), echoing well-documented gender wage gaps in urban China. Communist Party members earn roughly 14.3% more than non-members (β = 0.134, SE = 0.042, p = 0.002), potentially reflecting selection into higher-paying public sector positions. The model explains 31.2% of the variance in log earnings after conditioning on city fixed effects. Because this specification does not exploit exogenous variation in schooling, the education coefficient should be interpreted as a conditional association rather than a causal effect.",
+    "evaluation_focus": ["coefficient_accuracy", "se_accuracy", "no_causal_overclaim", "significance_language", "economic_interpretation"]
+  },
+  {
+    "id": "reg_002",
+    "task": "regression_interpretation",
+    "instruction": "Write a result analysis paragraph (150-200 words) for the following 2SLS regression results on minimum wage effects on employment.",
+    "input": {
+      "context": "2SLS regression where minimum wage is instrumented by neighboring city minimum wages. Dependent variable: log total employment. City and year fixed effects included. Panel data 2010-2020, 285 prefecture-level cities.",
+      "table": {
+        "variables": ["Log minimum wage", "Log GDP per capita", "Log population", "Constant"],
+        "coefficients": [-0.156, 0.423, 0.318, 2.104],
+        "std_errors": [0.071, 0.065, 0.089, 0.412],
+        "p_values": ["0.029", "<0.001", "<0.001", "<0.001"],
+        "first_stage_f": 47.3,
+        "r_squared": 0.681,
+        "notes": "Standard errors clustered at city level. First-stage F-statistic = 47.3."
+      }
+    },
+    "reference_output": "Column (2) of Table 3 reports 2SLS estimates instrumenting local minimum wages with neighboring city minimum wage schedules. The first-stage F-statistic of 47.3 comfortably exceeds the weak-instrument threshold of 10 (Stock and Yogo, 2005), supporting the relevance of the instrument. The 2SLS estimate indicates that a 10% increase in the minimum wage reduces total employment by approximately 1.56% (β = −0.156, SE = 0.071, p = 0.029). This negative and statistically significant effect survives the inclusion of city and year fixed effects, suggesting that the employment cost is not attributable to secular trends or time-invariant city characteristics. As expected, higher GDP per capita and larger population are both positively associated with employment levels. While the instrumental variable strategy addresses the endogeneity of minimum wage setting—whereby cities with stronger labor markets may set higher minimums—the exclusion restriction requires that neighboring cities' policies affect local employment only through the own-city minimum wage, an assumption we assess in robustness checks reported in Table A3.",
+    "evaluation_focus": ["iv_validity_discussion", "coefficient_accuracy", "f_stat_reported", "exclusion_restriction_mentioned", "no_overclaim"]
+  },
+  {
+    "id": "reg_003",
+    "task": "regression_interpretation",
+    "instruction": "Write a result analysis paragraph (120-180 words) for the following difference-in-differences regression. The treatment is a pollution control policy introduced in treated cities in 2015.",
+    "input": {
+      "context": "DiD regression examining the effect of a pollution control policy on manufacturing output. Treated: 42 cities that implemented the policy in 2015. Control: 198 cities that did not. Outcome: log manufacturing output value. Sample: 2012-2018.",
+      "table": {
+        "variables": ["Treated × Post", "Post", "Treated", "Log labor force", "Constant"],
+        "coefficients": [-0.089, 0.031, 0.012, 0.761, 4.312],
+        "std_errors": [0.034, 0.018, 0.041, 0.052, 0.318],
+        "p_values": ["0.010", "0.089", "0.771", "<0.001", "<0.001"],
+        "notes": "City and year FE absorbed. Standard errors clustered at city level. Parallel trends test: p=0.412."
+      }
+    },
+    "reference_output": "The DiD estimate, reported in Column (1) of Table 4, indicates that the pollution control policy reduced manufacturing output in treated cities by approximately 8.5% relative to control cities in the post-2015 period (β = −0.089, SE = 0.034, p = 0.010). The treatment indicator alone is not significantly different from zero (p = 0.771), consistent with the parallel trends assumption that treated and control cities followed similar pre-treatment trajectories—a pattern formally supported by the pre-trend test (p = 0.412). The insignificant post-period coefficient (p = 0.089) suggests that common time shocks do not confound the estimated treatment effect. City and year fixed effects are absorbed throughout. The negative treatment effect is consistent with the hypothesis that stricter environmental regulation raises compliance costs for manufacturing firms, though we cannot rule out output displacement to neighboring unregulated cities.",
+    "evaluation_focus": ["did_terminology", "parallel_trends_mentioned", "coefficient_accuracy", "causal_language_appropriate", "alternative_explanation"]
+  }
+]
