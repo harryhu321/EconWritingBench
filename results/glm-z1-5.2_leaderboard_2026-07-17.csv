@@ -1,0 +1,2 @@
+模型,Overall,Task1 Related Work,Task2 回归解读,Task3 Introduction,Task4 摘要润色,Task5 研究设计,版本,日期,样本覆盖
+GLM-Z1-5.2,4.41,4.81,4.81,4.53,3.78,3.89,rubric-v1.0,2026-07-17,75/75 (related_work:15 / regression_interpretation:15 / intro_motivation:15 / abstract_polish:15 / research_design:15)
