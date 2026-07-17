@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "scoring_scale": "1-5",
+  "aggregation": "weighted_average_across_tasks",
+  "task_weights": {
+    "related_work": 0.20,
+    "regression_interpretation": 0.25,
+    "intro_motivation": 0.20,
+    "abstract_polish": 0.15,
+    "research_design": 0.20
+  },
+  "tasks": {
+    "related_work": {
+      "dimensions": [
+        {"name": "coverage_and_structure", "weight": 0.25, "description": "Does the paragraph cover key themes from the provided papers? Is there a logical structure (e.g., chronological, thematic)?", "anchors": {"1": "Misses most papers or presents a disorganized list", "3": "Covers most papers with partial synthesis", "5": "Synthesizes all key themes into a coherent narrative arc"}},
+        {"name": "faithfulness", "weight": 0.30, "description": "Are all citations grounded in the provided abstracts? No fabricated authors, titles, or findings.", "anchors": {"1": "Contains fabricated citations or findings", "3": "Mostly faithful with minor inaccuracies", "5": "Fully faithful to source material"}},
+        {"name": "synthesis_quality", "weight": 0.25, "description": "Does the paragraph synthesize across papers rather than summarize each individually?", "anchors": {"1": "Paper-by-paper list with no integration", "3": "Some grouping but limited synthesis", "5": "Full synthesis: papers are organized by theme/debate with explicit connections"}},
+        {"name": "academic_tone", "weight": 0.20, "description": "Is the language appropriate for an academic paper?", "anchors": {"1": "Informal, colloquial, or promotional language", "3": "Mostly academic with occasional informal phrases", "5": "Fully academic: precise, hedged where appropriate, no colloquialisms"}}
+      ],
+      "hard_deductions": [
+        {"condition": "Any fabricated citation (author/title not in input)", "deduction": -2},
+        {"condition": "Directly contradicts a finding stated in an abstract", "deduction": -1}
+      ]
+    },
+    "regression_interpretation": {
+      "dimensions": [
+        {"name": "numerical_accuracy", "weight": 0.35, "description": "Are all reported coefficients, standard errors, p-values, and statistics copied correctly?", "anchors": {"1": "Multiple numerical errors", "3": "1-2 minor numerical errors", "5": "All numbers perfectly accurate"}},
+        {"name": "economic_interpretation", "weight": 0.25, "description": "Does the text correctly interpret the economic meaning (not just the statistical significance) of the results?", "anchors": {"1": "Only restates numbers, no economic meaning", "3": "Some economic interpretation but incomplete", "5": "Full economic interpretation with context and units"}},
+        {"name": "causal_language", "weight": 0.25, "description": "Is causal language used appropriately given the design (OLS vs. IV vs. DiD)?", "anchors": {"1": "Unwarranted causal claims (e.g., OLS called causal without discussion)", "3": "Partly appropriate with occasional overclaims", "5": "Precisely calibrated: OLS described as 'association', IV/DiD described as 'causal effect'"}},
+        {"name": "statistical_language", "weight": 0.15, "description": "Is statistical significance described correctly (p-values, confidence intervals, not 'proves')?", "anchors": {"1": "Says 'proves' or 'confirms' without qualification", "3": "Uses 'significant' correctly but omits levels", "5": "Correct significance language with levels and standard errors reported"}}
+      ],
+      "hard_deductions": [
+        {"condition": "Wrong sign on a coefficient", "deduction": -2},
+        {"condition": "Omits reporting first-stage F-stat when design is IV", "deduction": -1},
+        {"condition": "States OLS result is causal without discussion", "deduction": -1}
+      ]
+    },
+    "intro_motivation": {
+      "dimensions": [
+        {"name": "problem_importance", "weight": 0.25, "description": "Does the paragraph convince the reader that the research question matters?", "anchors": {"1": "Research question importance is not established", "3": "Importance is asserted but not supported with evidence", "5": "Importance is compellingly demonstrated with facts, stakes, and context"}},
+        {"name": "literature_gap", "weight": 0.30, "description": "Is the gap in existing literature clearly and accurately identified?", "anchors": {"1": "No gap identified", "3": "Gap is vague or overstated", "5": "Specific, defensible gap identified with reference to what existing work has and has not done"}},
+        {"name": "hook_quality", "weight": 0.20, "description": "Does the opening engage the reader and motivate continued reading?", "anchors": {"1": "Opens with a generic statement (e.g., 'X is an important topic')", "3": "Decent opening with some engagement", "5": "Compelling hook: a striking fact, puzzle, or contradiction that creates tension"}},
+        {"name": "research_objective_clarity", "weight": 0.25, "description": "Is the research objective (what this paper does) stated clearly and positioned against the gap?", "anchors": {"1": "Research objective is absent or vague", "3": "Objective stated but not connected to the gap", "5": "Objective directly addresses the identified gap, with method previewed"}}
+      ],
+      "hard_deductions": [
+        {"condition": "Opens with 'X is very important' without evidence", "deduction": -0.5},
+        {"condition": "Research objective contradicts the stated gap", "deduction": -1}
+      ]
+    },
+    "abstract_polish": {
+      "dimensions": [
+        {"name": "language_quality", "weight": 0.30, "description": "Is the English idiomatic, precise, and free of colloquialisms or Chinese-English interference?", "anchors": {"1": "Frequent unidiomatic phrases or grammatical errors", "3": "Mostly fluent with 2-3 awkward phrases", "5": "Fully idiomatic, publication-ready English"}},
+        {"name": "structure", "weight": 0.25, "description": "Does the abstract follow the standard structure: motivation/background → method → results → implication?", "anchors": {"1": "Structure is absent or random", "3": "Most components present but not clearly sequenced", "5": "Complete and clearly sequenced IMRaD structure"}},
+        {"name": "information_preservation", "weight": 0.25, "description": "Is all key information from the draft preserved (research question, method, main finding, implication)?", "anchors": {"1": "Key information lost", "3": "Most information preserved with minor omissions", "5": "All key information preserved and enhanced"}},
+        {"name": "precision", "weight": 0.20, "description": "Are quantitative findings reported with appropriate precision (effect sizes, confidence intervals, sample characteristics)?", "anchors": {"1": "Vague qualitative descriptions replace quantitative findings", "3": "Some quantification but incomplete", "5": "All key quantitative findings precisely reported"}}
+      ],
+      "hard_deductions": [
+        {"condition": "Introduces new claims not in the draft", "deduction": -1},
+        {"condition": "Removes the main quantitative finding", "deduction": -1}
+      ]
+    },
+    "research_design": {
+      "dimensions": [
+        {"name": "identification_quality", "weight": 0.35, "description": "Is the proposed identification strategy credible and appropriate for the research question?", "anchors": {"1": "No identification strategy or naive OLS without discussion", "3": "Strategy proposed but with unaddressed endogeneity", "5": "Credible strategy with explicit discussion of exogeneity condition"}},
+        {"name": "data_feasibility", "weight": 0.25, "description": "Are the suggested data sources real, accessible, and appropriate?", "anchors": {"1": "Data sources are fictional or inaccessible", "3": "Real but partially appropriate data", "5": "Specific, named, accessible datasets appropriate to the research question"}},
+        {"name": "threat_completeness", "weight": 0.25, "description": "Are the main threats to validity identified and addressed?", "anchors": {"1": "No threats discussed", "3": "1-2 threats identified without clear responses", "5": "3+ major threats identified with specific mitigation strategies"}},
+        {"name": "feasibility_for_researcher", "weight": 0.15, "description": "Is the design realistic given the researcher's stated background and resources?", "anchors": {"1": "Design is clearly infeasible given stated constraints", "3": "Feasible with significant effort", "5": "Well-calibrated to researcher's capacity with pragmatic compromises noted"}}
+      ],
+      "hard_deductions": [
+        {"condition": "Proposes an instrument without discussing exclusion restriction", "deduction": -1},
+        {"condition": "Suggests data that does not exist or is clearly inaccessible", "deduction": -1}
+      ]
+    }
+  }
+}
