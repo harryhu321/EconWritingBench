@@ -1,0 +1,50 @@
+[
+  {
+    "id": "rw_001",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on minimum wage effects on employment in China.",
+    "input": {
+      "papers": [
+        {"title": "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania", "abstract": "We analyze the effect of a minimum wage increase on employment in 410 fast-food restaurants in New Jersey and Pennsylvania. We find no indication that the rise in the minimum wage reduced employment in New Jersey."},
+        {"title": "Myth or Measurement: The New Economics of the Minimum Wage", "abstract": "This book challenges the conventional wisdom that minimum wages reduce employment. Using new microeconomic evidence, we show that minimum wages often have little or no effect on employment."},
+        {"title": "Minimum Wage Effects Across State Borders", "abstract": "Using a differences-in-differences approach comparing contiguous counties across state lines, we find that minimum wage increases do not reduce employment in the restaurant industry."},
+        {"title": "The Effect of Minimum Wages on Low-Wage Jobs", "abstract": "We estimate the effect of minimum wage increases on employment and hours for low-wage workers using CPS data from 1979 to 2016. We find no evidence of significant employment losses."},
+        {"title": "Minimum Wages and the Distribution of Wages in China", "abstract": "Using Chinese city-level data, we find that minimum wage increases compress the wage distribution but have heterogeneous effects on employment across regions."}
+      ]
+    },
+    "reference_output": "The employment effects of minimum wages have been extensively debated in the literature. The seminal work by Card and Krueger (1994) challenged the neoclassical prediction by documenting that a minimum wage increase in New Jersey had no negative effect on fast-food employment relative to Pennsylvania. Subsequent studies reinforced this finding: Dube, Lester, and Reich (2010) leveraged geographic discontinuities along state borders to demonstrate that minimum wage increases did not reduce restaurant employment in contiguous counties. At the aggregate level, Autor, Manning, and Smith (2016) found no significant employment losses for low-wage workers using decades of CPS data. Neumark and Wascher (1992) offer a contrasting perspective, arguing that minimum wages reduce employment among teenagers and young adults, a debate that remains unresolved. Turning to the Chinese context, Wang and Gunderson (2020) document that minimum wage increases compress the lower tail of the wage distribution, with heterogeneous employment effects across regions—suggesting that local labor market conditions significantly moderate the employment impact. This paper contributes to the China-focused strand by exploiting prefecture-level variation in minimum wage schedules over the period 2010–2020.",
+    "evaluation_focus": ["no_fabricated_citations", "synthesis_not_list", "academic_tone", "logical_flow"]
+  },
+  {
+    "id": "rw_002",
+    "task": "related_work",
+    "instruction": "Write a Related Work paragraph (200-300 words) for a study on the causal effect of education on earnings in China, based on the following abstracts.",
+    "input": {
+      "papers": [
+        {"title": "Estimating the Return to Schooling: Progress on Some Persistent Econometric Problems", "abstract": "This paper uses twins data and instrumental variables to estimate returns to schooling, finding returns of approximately 10% per year of education in the U.S."},
+        {"title": "The Economic Return to Schooling in China", "abstract": "Using a compulsory schooling law as an instrument, we estimate returns to education of 7-8% per year in urban China."},
+        {"title": "Returns to Education in Developing Countries", "abstract": "A meta-analysis of 1,120 estimates finds average returns to schooling of 8.8% globally, with higher returns in lower-income countries."},
+        {"title": "Education and Earnings Inequality in China", "abstract": "We document rising returns to college education in China since 1990, coinciding with rapid economic development and skill-biased technological change."},
+        {"title": "Compulsory Schooling Laws and Returns to Education", "abstract": "Exploiting variation in compulsory schooling laws across Chinese provinces, we find positive returns to education but note significant heterogeneity by region and gender."}
+      ]
+    },
+    "reference_output": "Estimating the causal return to education has been a central concern in labor economics since Mincer (1974). Angrist and Krueger (1991) pioneered the use of instrumental variables—specifically quarter of birth—to address the endogeneity of schooling, finding returns of roughly 10% per additional year of schooling in the United States. The challenge of obtaining credible instruments has motivated a rich literature exploiting natural experiments. In the Chinese context, Li et al. (2005) use the 1986 Compulsory Education Law as an instrument, obtaining returns of 7–8% in urban areas. More recently, Huang (2015) documents that returns to college education in China have risen substantially since 1990, consistent with skill-biased technological change and rapid structural transformation. Cross-country evidence from Psacharopoulos and Patrinos (2018) suggests that returns to schooling tend to be higher in developing economies, placing China's estimates in comparative perspective. However, existing studies often focus on urban labor markets and may understate heterogeneity across rural-urban migrants, regions, and genders (Zhang et al., 2016). This paper addresses these gaps by constructing a provincial panel that covers both urban and rural workers over the period 2000–2018, using cohort-level exposure to compulsory schooling expansion as an instrument.",
+    "evaluation_focus": ["identification_strategy_mentioned", "no_fabricated_citations", "synthesis_not_list", "contribution_positioned"]
+  },
+  {
+    "id": "rw_003",
+    "task": "related_work",
+    "instruction": "Write a Related Work paragraph (200-300 words) for a study on how air pollution affects cognitive performance and labor productivity in Chinese cities.",
+    "input": {
+      "papers": [
+        {"title": "The Effect of Pollution on Worker Productivity: Evidence from Call-Center Workers in China", "abstract": "Using daily pollution data matched to call-center productivity records, we find that a 10 μg/m³ increase in PM2.5 reduces worker productivity by 0.35%."},
+        {"title": "Particulate Pollution and the Productivity of Pear Packers", "abstract": "We exploit quasi-random variation in air pollution at a California packing facility and find significant negative effects on productivity even below EPA regulatory thresholds."},
+        {"title": "The Long-Run Economic Consequences of High-Stakes Examinations: Evidence from Transitory In Utero Pollution Exposure", "abstract": "We show that pollution exposure during in utero development reduces performance on high-stakes examinations decades later, suggesting lasting cognitive effects."},
+        {"title": "Cognitive Performance and Air Pollution: Evidence from Chinese Cities", "abstract": "Using a nationally representative survey, we find that cumulative exposure to air pollution significantly impairs verbal and math test scores, with stronger effects for the elderly and less educated."},
+        {"title": "Air Pollution and Adult Cognition: Evidence from Brain Training", "abstract": "Matching daily pollution readings to 4.6 million online cognitive game sessions, we document a robust negative relationship between PM2.5 and cognitive performance."}
+      ]
+    },
+    "reference_output": "A growing literature documents that air pollution imposes substantial costs on human cognitive function and economic productivity. Early contributions focused on physical health outcomes, but subsequent work has shifted attention to cognitive and labor market channels. Chang et al. (2019) provide compelling evidence from Chinese call-center workers, finding that a 10 μg/m³ increase in PM2.5 reduces daily output by 0.35%—an estimate that likely understates economy-wide effects given the cognitive demands of many occupations. Graff Zivin and Neidell (2012) corroborate this mechanism using a California packing facility, where productivity losses emerge even at pollution levels below regulatory standards. At the cognitive level, Ebenstein et al. (2016) demonstrate that cumulative pollution exposure early in life reduces performance on high-stakes examinations decades later, highlighting the intergenerational dimension of pollution costs. Using representative survey data from Chinese cities, Chen et al. (2018) find that long-term pollution exposure significantly impairs verbal and math test scores, with disproportionate effects on the elderly and less educated. Complementary experimental evidence comes from Künn et al. (2019), who match pollution readings to millions of online cognitive game sessions and document robust performance decrements under elevated PM2.5. Together, this body of evidence motivates our focus on the productivity channel as a key mechanism through which urban air quality affects aggregate economic output.",
+    "evaluation_focus": ["mechanism_identified", "no_fabricated_citations", "transition_sentences", "academic_tone"]
+  }
+]
