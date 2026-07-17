@@ -36,8 +36,8 @@ def ark_client(base_url: str, api_key: str) -> OpenAI:
     return OpenAI(
         api_key=api_key,
         base_url=base_url,
-        http_client=httpx.Client(timeout=180.0, trust_env=False),
-        max_retries=2,
+        http_client=httpx.Client(timeout=60.0, trust_env=False),
+        max_retries=1,
     )
 
 
@@ -187,7 +187,7 @@ def main() -> None:
                 continue
 
             last_err = ""
-            for attempt in range(1, 4):
+            for attempt in range(1, 3):
                 try:
                     judge = judge_one(
                         client=client,
