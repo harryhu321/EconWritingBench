@@ -1,0 +1,81 @@
+[
+  {
+    "id": "rd_001",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "research_idea": "I want to study whether living near a high-speed rail station affects housing prices in Chinese cities.",
+      "researcher_background": "PhD student in economics, familiar with basic econometrics and panel data methods"
+    },
+    "reference_output": {
+      "research_question": "What is the causal effect of high-speed rail (HSR) station proximity on residential property prices in Chinese cities, and through which channels does this effect operate?",
+      "identification_strategy": "The core challenge is that HSR station locations are not randomly assigned—they tend to be placed in already-growing or strategically important areas, creating an upward bias in naive OLS estimates. Two complementary strategies address this. First, a difference-in-differences design comparing neighborhoods within treated cities before and after HSR opening, using neighborhoods farther from the station (e.g., >10km) as the control group, with city × time fixed effects absorbing common shocks. Second, a more credible instrument exploits the fact that China's HSR network was partly designed to follow straight-line ('as-the-crow-flies') routes between major endpoints: the straight-line distance between endpoint cities, interacted with post-opening periods, generates variation in station placement that is plausibly orthogonal to local economic conditions.",
+      "data_sources": [
+        "Property transaction data: CREIS (China Real Estate Information System) or Fang.com scraped listings with geo-coordinates and transaction prices",
+        "HSR opening dates and station locations: official China Railway announcements, cross-checked with Baidu Maps API",
+        "Neighborhood-level controls: Census 2000/2010 for baseline demographics, CLUE (China Land Use/Cover Change) for land use",
+        "City-level macro: NBS prefecture statistical yearbooks for GDP, population, income"
+      ],
+      "threats_and_responses": [
+        {"threat": "Anticipation effects: prices may rise before the station opens", "response": "Include leads of the treatment indicator in the event-study specification; if pre-trends are significant, adjust the treatment date to the announcement date."},
+        {"threat": "Parallel trends violation: treated neighborhoods may have been on different pre-trends", "response": "Conduct event-study plots for 5+ pre-periods; use the Callaway-Sant'Anna (2021) estimator if staggered rollout creates heterogeneous treatment timing."},
+        {"threat": "Displacement effects: HSR may attract residents from elsewhere in the city, inflating nearby prices while deflating farther neighborhoods", "response": "Test for spatial spillovers using a spatial-lag model; define 'far control' neighborhoods carefully to exclude areas that are plausible destinations for displaced demand."},
+        {"threat": "Data quality: scraped listing prices differ from transaction prices", "response": "If possible, supplement with official transaction records from local housing bureaus (房管局); report results for both measures."}
+      ]
+    },
+    "evaluation_focus": ["identification_credibility", "data_feasibility", "threat_completeness", "iv_validity_discussed", "actionability"]
+  },
+  {
+    "id": "rd_002",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea.",
+    "input": {
+      "research_idea": "I'm interested in studying whether exposure to social media (specifically short-video platforms like Douyin/TikTok) affects consumption behavior of young Chinese consumers.",
+      "researcher_background": "Master's student, has access to a university survey platform, limited budget"
+    },
+    "reference_output": {
+      "research_question": "Does exposure to short-video platform content causally increase consumption expenditure and shift consumption composition (e.g., toward experiential or luxury goods) among young Chinese consumers aged 18–30?",
+      "identification_strategy": "Random assignment is difficult given platform ubiquity, so the design should exploit quasi-experimental variation. The most feasible option for a master's student is a survey experiment combined with a short-term field component: (1) recruit participants through the university platform; (2) randomly assign half to a two-week 'reduced usage' condition (guided screen-time limits via iOS/Android app controls) and half to a control condition; (3) measure consumption via daily diary or linked payment records if participants consent to share anonymized Alipay data. For a more observational design, exploit the staggered city-level rollout of Douyin's local content recommendation feature (launched in different cities at different times during 2017-2019) as an instrument for platform engagement intensity, using individual-level consumption data from CFPS or CHNS.",
+      "data_sources": [
+        "Primary: university survey with daily consumption diary (feasible, low cost)",
+        "Platform usage: self-reported screen time (iOS Screen Time / Android Digital Wellbeing), or Douyin's own usage stats if API accessible",
+        "Secondary for observational approach: CFPS 2016-2020 consumption module merged with Douyin city-level rollout timeline",
+        "Consumption composition: WeChat/Alipay transaction categories if consented data sharing is feasible"
+      ],
+      "threats_and_responses": [
+        {"threat": "Hawthorne effect: participants in the reduced-usage group may change behavior due to awareness of being observed", "response": "Use a cross-over design where the control group reduces usage in week 3-4; compare within-person changes."},
+        {"threat": "Compliance: participants assigned to reduce usage may not comply", "response": "Measure actual screen time as a continuous variable and use assigned condition as an instrument for actual usage (IV within the experiment)."},
+        {"threat": "Selection into platform use is correlated with baseline consumption preferences", "response": "In the observational design, control for pre-treatment consumption levels and use the staggered rollout as the source of variation; conduct balance tests across rollout cohorts."},
+        {"threat": "Spillovers: reduced usage by one person may affect purchases influenced by peer social comparison on the platform", "response": "Measure social network overlap among participants and test whether effects vary with network density."}
+      ]
+    },
+    "evaluation_focus": ["feasibility_given_resources", "identification_creative", "data_sources_realistic", "within_reach_for_ms_student", "threat_completeness"]
+  },
+  {
+    "id": "rd_003",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea.",
+    "input": {
+      "research_idea": "I want to know if the expansion of rural e-commerce (like Taobao villages) has reduced rural poverty in China.",
+      "researcher_background": "PhD student with access to county-level data, familiar with spatial econometrics"
+    },
+    "reference_output": {
+      "research_question": "Does the designation of a county as a 'Taobao Village' cluster—indicating critical mass of e-commerce adoption—causally reduce rural poverty rates, and what are the employment and income channels through which this effect operate?",
+      "identification_strategy": "Taobao Village designation is endogenous: Alibaba tends to recognize areas that already have active e-commerce communities, creating positive selection bias. Two strategies mitigate this. First, a staggered DiD exploiting the annual rollout of Taobao Village designations from 2014 to 2022, using never-treated or not-yet-treated counties as controls, implemented via the Callaway-Sant'Anna (2021) heterogeneity-robust estimator. Second, an IV approach using county-level baseline broadband penetration (from MIIT 2010 data) interacted with the national e-commerce promotion policy rollout year as an instrument for timing of Taobao Village adoption—broadband infrastructure predates e-commerce adoption and is plausibly uncorrelated with contemporaneous poverty trends conditional on county fixed effects.",
+      "data_sources": [
+        "Taobao Village list: Alibaba Research Institute annual report (publicly available, 2014–present), geocoded to county level",
+        "Rural poverty: NBS county poverty incidence and per capita rural income from poverty monitoring reports; supplemented by nighttime light intensity (DMSP/NOAA) as proxy",
+        "Broadband instrument: MIIT province-level reports; county interpolation using tower location data if available",
+        "Employment channels: CHNS rural labor force survey or CFPS rural occupational module",
+        "County controls: NBS county statistical yearbooks (area, population, distance to prefecture capital, terrain ruggedness from SRTM DEM)"
+      ],
+      "threats_and_responses": [
+        {"threat": "Positive selection: Alibaba designates already-successful e-commerce areas", "response": "Use the DiD design with not-yet-treated counties; explicitly test whether pre-designation trends in poverty differ between future treated and control counties."},
+        {"threat": "Broadband instrument exclusion restriction: early broadband may predict local economic development through channels other than e-commerce", "response": "Control for baseline economic variables interacted with post-period indicators; test the instrument's effect on outcomes in pre-e-commerce years as a placebo."},
+        {"threat": "SUTVA violation: e-commerce in one county may displace business from neighboring counties", "response": "Construct a measure of neighboring county Taobao Village intensity and include it as a control; estimate spatial spillover effects using a spatial-lag model."},
+        {"threat": "Poverty measurement error: official poverty statistics may be manipulated near the designated poverty line", "response": "Use nighttime light and consumption survey measures as alternative outcomes to triangulate."}
+      ]
+    },
+    "evaluation_focus": ["heterogeneity_robust_estimator", "iv_relevance_exclusion", "data_granularity", "spatial_spillover_awareness", "poverty_measurement_robustness"]
+  }
+]
