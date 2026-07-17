@@ -5,15 +5,36 @@
     "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on minimum wage effects on employment in China.",
     "input": {
       "papers": [
-        {"title": "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania", "abstract": "We analyze the effect of a minimum wage increase on employment in 410 fast-food restaurants in New Jersey and Pennsylvania. We find no indication that the rise in the minimum wage reduced employment in New Jersey."},
-        {"title": "Myth or Measurement: The New Economics of the Minimum Wage", "abstract": "This book challenges the conventional wisdom that minimum wages reduce employment. Using new microeconomic evidence, we show that minimum wages often have little or no effect on employment."},
-        {"title": "Minimum Wage Effects Across State Borders", "abstract": "Using a differences-in-differences approach comparing contiguous counties across state lines, we find that minimum wage increases do not reduce employment in the restaurant industry."},
-        {"title": "The Effect of Minimum Wages on Low-Wage Jobs", "abstract": "We estimate the effect of minimum wage increases on employment and hours for low-wage workers using CPS data from 1979 to 2016. We find no evidence of significant employment losses."},
-        {"title": "Minimum Wages and the Distribution of Wages in China", "abstract": "Using Chinese city-level data, we find that minimum wage increases compress the wage distribution but have heterogeneous effects on employment across regions."}
+        {
+          "title": "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania",
+          "abstract": "We analyze the effect of a minimum wage increase on employment in 410 fast-food restaurants in New Jersey and Pennsylvania. We find no indication that the rise in the minimum wage reduced employment in New Jersey."
+        },
+        {
+          "title": "Myth or Measurement: The New Economics of the Minimum Wage",
+          "abstract": "This book challenges the conventional wisdom that minimum wages reduce employment. Using new microeconomic evidence, we show that minimum wages often have little or no effect on employment."
+        },
+        {
+          "title": "Minimum Wage Effects Across State Borders",
+          "abstract": "Using a differences-in-differences approach comparing contiguous counties across state lines, we find that minimum wage increases do not reduce employment in the restaurant industry."
+        },
+        {
+          "title": "The Effect of Minimum Wages on Low-Wage Jobs",
+          "abstract": "We estimate the effect of minimum wage increases on employment and hours for low-wage workers using CPS data from 1979 to 2016. We find no evidence of significant employment losses."
+        },
+        {
+          "title": "Minimum Wages and the Distribution of Wages in China",
+          "abstract": "Using Chinese city-level data, we find that minimum wage increases compress the wage distribution but have heterogeneous effects on employment across regions."
+        }
       ]
     },
     "reference_output": "The employment effects of minimum wages have been extensively debated in the literature. The seminal work by Card and Krueger (1994) challenged the neoclassical prediction by documenting that a minimum wage increase in New Jersey had no negative effect on fast-food employment relative to Pennsylvania. Subsequent studies reinforced this finding: Dube, Lester, and Reich (2010) leveraged geographic discontinuities along state borders to demonstrate that minimum wage increases did not reduce restaurant employment in contiguous counties. At the aggregate level, Autor, Manning, and Smith (2016) found no significant employment losses for low-wage workers using decades of CPS data. Neumark and Wascher (1992) offer a contrasting perspective, arguing that minimum wages reduce employment among teenagers and young adults, a debate that remains unresolved. Turning to the Chinese context, Wang and Gunderson (2020) document that minimum wage increases compress the lower tail of the wage distribution, with heterogeneous employment effects across regions—suggesting that local labor market conditions significantly moderate the employment impact. This paper contributes to the China-focused strand by exploiting prefecture-level variation in minimum wage schedules over the period 2010–2020.",
-    "evaluation_focus": ["no_fabricated_citations", "synthesis_not_list", "academic_tone", "logical_flow"]
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "academic_tone",
+      "logical_flow"
+    ],
+    "sample_id": "rw_001"
   },
   {
     "id": "rw_002",
@@ -21,15 +42,36 @@
     "instruction": "Write a Related Work paragraph (200-300 words) for a study on the causal effect of education on earnings in China, based on the following abstracts.",
     "input": {
       "papers": [
-        {"title": "Estimating the Return to Schooling: Progress on Some Persistent Econometric Problems", "abstract": "This paper uses twins data and instrumental variables to estimate returns to schooling, finding returns of approximately 10% per year of education in the U.S."},
-        {"title": "The Economic Return to Schooling in China", "abstract": "Using a compulsory schooling law as an instrument, we estimate returns to education of 7-8% per year in urban China."},
-        {"title": "Returns to Education in Developing Countries", "abstract": "A meta-analysis of 1,120 estimates finds average returns to schooling of 8.8% globally, with higher returns in lower-income countries."},
-        {"title": "Education and Earnings Inequality in China", "abstract": "We document rising returns to college education in China since 1990, coinciding with rapid economic development and skill-biased technological change."},
-        {"title": "Compulsory Schooling Laws and Returns to Education", "abstract": "Exploiting variation in compulsory schooling laws across Chinese provinces, we find positive returns to education but note significant heterogeneity by region and gender."}
+        {
+          "title": "Estimating the Return to Schooling: Progress on Some Persistent Econometric Problems",
+          "abstract": "This paper uses twins data and instrumental variables to estimate returns to schooling, finding returns of approximately 10% per year of education in the U.S."
+        },
+        {
+          "title": "The Economic Return to Schooling in China",
+          "abstract": "Using a compulsory schooling law as an instrument, we estimate returns to education of 7-8% per year in urban China."
+        },
+        {
+          "title": "Returns to Education in Developing Countries",
+          "abstract": "A meta-analysis of 1,120 estimates finds average returns to schooling of 8.8% globally, with higher returns in lower-income countries."
+        },
+        {
+          "title": "Education and Earnings Inequality in China",
+          "abstract": "We document rising returns to college education in China since 1990, coinciding with rapid economic development and skill-biased technological change."
+        },
+        {
+          "title": "Compulsory Schooling Laws and Returns to Education",
+          "abstract": "Exploiting variation in compulsory schooling laws across Chinese provinces, we find positive returns to education but note significant heterogeneity by region and gender."
+        }
       ]
     },
     "reference_output": "Estimating the causal return to education has been a central concern in labor economics since Mincer (1974). Angrist and Krueger (1991) pioneered the use of instrumental variables—specifically quarter of birth—to address the endogeneity of schooling, finding returns of roughly 10% per additional year of schooling in the United States. The challenge of obtaining credible instruments has motivated a rich literature exploiting natural experiments. In the Chinese context, Li et al. (2005) use the 1986 Compulsory Education Law as an instrument, obtaining returns of 7–8% in urban areas. More recently, Huang (2015) documents that returns to college education in China have risen substantially since 1990, consistent with skill-biased technological change and rapid structural transformation. Cross-country evidence from Psacharopoulos and Patrinos (2018) suggests that returns to schooling tend to be higher in developing economies, placing China's estimates in comparative perspective. However, existing studies often focus on urban labor markets and may understate heterogeneity across rural-urban migrants, regions, and genders (Zhang et al., 2016). This paper addresses these gaps by constructing a provincial panel that covers both urban and rural workers over the period 2000–2018, using cohort-level exposure to compulsory schooling expansion as an instrument.",
-    "evaluation_focus": ["identification_strategy_mentioned", "no_fabricated_citations", "synthesis_not_list", "contribution_positioned"]
+    "evaluation_focus": [
+      "identification_strategy_mentioned",
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_002"
   },
   {
     "id": "rw_003",
@@ -37,14 +79,875 @@
     "instruction": "Write a Related Work paragraph (200-300 words) for a study on how air pollution affects cognitive performance and labor productivity in Chinese cities.",
     "input": {
       "papers": [
-        {"title": "The Effect of Pollution on Worker Productivity: Evidence from Call-Center Workers in China", "abstract": "Using daily pollution data matched to call-center productivity records, we find that a 10 μg/m³ increase in PM2.5 reduces worker productivity by 0.35%."},
-        {"title": "Particulate Pollution and the Productivity of Pear Packers", "abstract": "We exploit quasi-random variation in air pollution at a California packing facility and find significant negative effects on productivity even below EPA regulatory thresholds."},
-        {"title": "The Long-Run Economic Consequences of High-Stakes Examinations: Evidence from Transitory In Utero Pollution Exposure", "abstract": "We show that pollution exposure during in utero development reduces performance on high-stakes examinations decades later, suggesting lasting cognitive effects."},
-        {"title": "Cognitive Performance and Air Pollution: Evidence from Chinese Cities", "abstract": "Using a nationally representative survey, we find that cumulative exposure to air pollution significantly impairs verbal and math test scores, with stronger effects for the elderly and less educated."},
-        {"title": "Air Pollution and Adult Cognition: Evidence from Brain Training", "abstract": "Matching daily pollution readings to 4.6 million online cognitive game sessions, we document a robust negative relationship between PM2.5 and cognitive performance."}
+        {
+          "title": "The Effect of Pollution on Worker Productivity: Evidence from Call-Center Workers in China",
+          "abstract": "Using daily pollution data matched to call-center productivity records, we find that a 10 μg/m³ increase in PM2.5 reduces worker productivity by 0.35%."
+        },
+        {
+          "title": "Particulate Pollution and the Productivity of Pear Packers",
+          "abstract": "We exploit quasi-random variation in air pollution at a California packing facility and find significant negative effects on productivity even below EPA regulatory thresholds."
+        },
+        {
+          "title": "The Long-Run Economic Consequences of High-Stakes Examinations: Evidence from Transitory In Utero Pollution Exposure",
+          "abstract": "We show that pollution exposure during in utero development reduces performance on high-stakes examinations decades later, suggesting lasting cognitive effects."
+        },
+        {
+          "title": "Cognitive Performance and Air Pollution: Evidence from Chinese Cities",
+          "abstract": "Using a nationally representative survey, we find that cumulative exposure to air pollution significantly impairs verbal and math test scores, with stronger effects for the elderly and less educated."
+        },
+        {
+          "title": "Air Pollution and Adult Cognition: Evidence from Brain Training",
+          "abstract": "Matching daily pollution readings to 4.6 million online cognitive game sessions, we document a robust negative relationship between PM2.5 and cognitive performance."
+        }
       ]
     },
     "reference_output": "A growing literature documents that air pollution imposes substantial costs on human cognitive function and economic productivity. Early contributions focused on physical health outcomes, but subsequent work has shifted attention to cognitive and labor market channels. Chang et al. (2019) provide compelling evidence from Chinese call-center workers, finding that a 10 μg/m³ increase in PM2.5 reduces daily output by 0.35%—an estimate that likely understates economy-wide effects given the cognitive demands of many occupations. Graff Zivin and Neidell (2012) corroborate this mechanism using a California packing facility, where productivity losses emerge even at pollution levels below regulatory standards. At the cognitive level, Ebenstein et al. (2016) demonstrate that cumulative pollution exposure early in life reduces performance on high-stakes examinations decades later, highlighting the intergenerational dimension of pollution costs. Using representative survey data from Chinese cities, Chen et al. (2018) find that long-term pollution exposure significantly impairs verbal and math test scores, with disproportionate effects on the elderly and less educated. Complementary experimental evidence comes from Künn et al. (2019), who match pollution readings to millions of online cognitive game sessions and document robust performance decrements under elevated PM2.5. Together, this body of evidence motivates our focus on the productivity channel as a key mechanism through which urban air quality affects aggregate economic output.",
-    "evaluation_focus": ["mechanism_identified", "no_fabricated_citations", "transition_sentences", "academic_tone"]
+    "evaluation_focus": [
+      "mechanism_identified",
+      "no_fabricated_citations",
+      "transition_sentences",
+      "academic_tone"
+    ],
+    "sample_id": "rw_003"
+  },
+  {
+    "id": "rw_004",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Fiscal stimulus and private investment crowd-in after local government bond issuance.",
+    "input": {
+      "topic": "Fiscal stimulus and private investment crowd-in after local government bond issuance",
+      "field": "宏观经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "This study exploits quasi-experimental variation to estimate how fiscal stimulus and private investment crowd-in after local government bond issuance affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "Using panel microdata, this paper shows that the effects of fiscal stimulus and private investment crowd-in after local government bond issuance differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "The paper studies how local institutions mediate responses to fiscal stimulus and private investment crowd-in after local government bond issuance, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "This study exploits quasi-experimental variation to estimate how fiscal stimulus and private investment crowd-in after local government bond issuance affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "Using panel microdata, this paper shows that the effects of fiscal stimulus and private investment crowd-in after local government bond issuance differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "The paper studies how local institutions mediate responses to fiscal stimulus and private investment crowd-in after local government bond issuance, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Fiscal stimulus and private investment crowd-in after local government bond issuance",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_004"
+  },
+  {
+    "id": "rw_005",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Automation exposure and wage polarization among routine workers.",
+    "input": {
+      "topic": "Automation exposure and wage polarization among routine workers",
+      "field": "劳动经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Automation exposure and wage polarization among routine workers",
+          "abstract": "This study exploits quasi-experimental variation to estimate how automation exposure and wage polarization among routine workers affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Automation exposure and wage polarization among routine workers",
+          "abstract": "Using panel microdata, this paper shows that the effects of automation exposure and wage polarization among routine workers differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Automation exposure and wage polarization among routine workers",
+          "abstract": "The paper studies how local institutions mediate responses to automation exposure and wage polarization among routine workers, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Automation exposure and wage polarization among routine workers",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Automation exposure and wage polarization among routine workers",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Automation exposure and wage polarization among routine workers",
+          "abstract": "This study exploits quasi-experimental variation to estimate how automation exposure and wage polarization among routine workers affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Automation exposure and wage polarization among routine workers",
+          "abstract": "Using panel microdata, this paper shows that the effects of automation exposure and wage polarization among routine workers differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Automation exposure and wage polarization among routine workers",
+          "abstract": "The paper studies how local institutions mediate responses to automation exposure and wage polarization among routine workers, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Automation exposure and wage polarization among routine workers",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Automation exposure and wage polarization among routine workers",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_005"
+  },
+  {
+    "id": "rw_006",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Exchange-rate pass-through to export prices of Chinese manufacturing firms.",
+    "input": {
+      "topic": "Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+      "field": "国际贸易",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "This study exploits quasi-experimental variation to estimate how exchange-rate pass-through to export prices of chinese manufacturing firms affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "Using panel microdata, this paper shows that the effects of exchange-rate pass-through to export prices of chinese manufacturing firms differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "The paper studies how local institutions mediate responses to exchange-rate pass-through to export prices of chinese manufacturing firms, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "This study exploits quasi-experimental variation to estimate how exchange-rate pass-through to export prices of chinese manufacturing firms affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "Using panel microdata, this paper shows that the effects of exchange-rate pass-through to export prices of chinese manufacturing firms differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "The paper studies how local institutions mediate responses to exchange-rate pass-through to export prices of chinese manufacturing firms, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Exchange-rate pass-through to export prices of Chinese manufacturing firms",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_006"
+  },
+  {
+    "id": "rw_007",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Electoral accountability and local public-goods provision.",
+    "input": {
+      "topic": "Electoral accountability and local public-goods provision",
+      "field": "政治经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Electoral accountability and local public-goods provision",
+          "abstract": "This study exploits quasi-experimental variation to estimate how electoral accountability and local public-goods provision affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Electoral accountability and local public-goods provision",
+          "abstract": "Using panel microdata, this paper shows that the effects of electoral accountability and local public-goods provision differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Electoral accountability and local public-goods provision",
+          "abstract": "The paper studies how local institutions mediate responses to electoral accountability and local public-goods provision, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Electoral accountability and local public-goods provision",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Electoral accountability and local public-goods provision",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Electoral accountability and local public-goods provision",
+          "abstract": "This study exploits quasi-experimental variation to estimate how electoral accountability and local public-goods provision affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Electoral accountability and local public-goods provision",
+          "abstract": "Using panel microdata, this paper shows that the effects of electoral accountability and local public-goods provision differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Electoral accountability and local public-goods provision",
+          "abstract": "The paper studies how local institutions mediate responses to electoral accountability and local public-goods provision, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Electoral accountability and local public-goods provision",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Electoral accountability and local public-goods provision",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_007"
+  },
+  {
+    "id": "rw_008",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Regression discontinuity evidence from school-entry age rules.",
+    "input": {
+      "topic": "Regression discontinuity evidence from school-entry age rules",
+      "field": "计量方法",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Regression discontinuity evidence from school-entry age rules",
+          "abstract": "This study exploits quasi-experimental variation to estimate how regression discontinuity evidence from school-entry age rules affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Regression discontinuity evidence from school-entry age rules",
+          "abstract": "Using panel microdata, this paper shows that the effects of regression discontinuity evidence from school-entry age rules differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Regression discontinuity evidence from school-entry age rules",
+          "abstract": "The paper studies how local institutions mediate responses to regression discontinuity evidence from school-entry age rules, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Regression discontinuity evidence from school-entry age rules",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Regression discontinuity evidence from school-entry age rules",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Regression discontinuity evidence from school-entry age rules",
+          "abstract": "This study exploits quasi-experimental variation to estimate how regression discontinuity evidence from school-entry age rules affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Regression discontinuity evidence from school-entry age rules",
+          "abstract": "Using panel microdata, this paper shows that the effects of regression discontinuity evidence from school-entry age rules differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Regression discontinuity evidence from school-entry age rules",
+          "abstract": "The paper studies how local institutions mediate responses to regression discontinuity evidence from school-entry age rules, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Regression discontinuity evidence from school-entry age rules",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Regression discontinuity evidence from school-entry age rules",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_008"
+  },
+  {
+    "id": "rw_009",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Conditional cash transfers and school attendance in poor counties.",
+    "input": {
+      "topic": "Conditional cash transfers and school attendance in poor counties",
+      "field": "发展经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Conditional cash transfers and school attendance in poor counties",
+          "abstract": "This study exploits quasi-experimental variation to estimate how conditional cash transfers and school attendance in poor counties affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Conditional cash transfers and school attendance in poor counties",
+          "abstract": "Using panel microdata, this paper shows that the effects of conditional cash transfers and school attendance in poor counties differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Conditional cash transfers and school attendance in poor counties",
+          "abstract": "The paper studies how local institutions mediate responses to conditional cash transfers and school attendance in poor counties, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Conditional cash transfers and school attendance in poor counties",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Conditional cash transfers and school attendance in poor counties",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Conditional cash transfers and school attendance in poor counties",
+          "abstract": "This study exploits quasi-experimental variation to estimate how conditional cash transfers and school attendance in poor counties affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Conditional cash transfers and school attendance in poor counties",
+          "abstract": "Using panel microdata, this paper shows that the effects of conditional cash transfers and school attendance in poor counties differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Conditional cash transfers and school attendance in poor counties",
+          "abstract": "The paper studies how local institutions mediate responses to conditional cash transfers and school attendance in poor counties, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Conditional cash transfers and school attendance in poor counties",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Conditional cash transfers and school attendance in poor counties",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_009"
+  },
+  {
+    "id": "rw_010",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Carbon market pilots and firm-level abatement investment.",
+    "input": {
+      "topic": "Carbon market pilots and firm-level abatement investment",
+      "field": "环境经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Carbon market pilots and firm-level abatement investment",
+          "abstract": "This study exploits quasi-experimental variation to estimate how carbon market pilots and firm-level abatement investment affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Carbon market pilots and firm-level abatement investment",
+          "abstract": "Using panel microdata, this paper shows that the effects of carbon market pilots and firm-level abatement investment differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Carbon market pilots and firm-level abatement investment",
+          "abstract": "The paper studies how local institutions mediate responses to carbon market pilots and firm-level abatement investment, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Carbon market pilots and firm-level abatement investment",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Carbon market pilots and firm-level abatement investment",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Carbon market pilots and firm-level abatement investment",
+          "abstract": "This study exploits quasi-experimental variation to estimate how carbon market pilots and firm-level abatement investment affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Carbon market pilots and firm-level abatement investment",
+          "abstract": "Using panel microdata, this paper shows that the effects of carbon market pilots and firm-level abatement investment differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Carbon market pilots and firm-level abatement investment",
+          "abstract": "The paper studies how local institutions mediate responses to carbon market pilots and firm-level abatement investment, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Carbon market pilots and firm-level abatement investment",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Carbon market pilots and firm-level abatement investment",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_010"
+  },
+  {
+    "id": "rw_011",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Platform commission rates and restaurant entry on delivery apps.",
+    "input": {
+      "topic": "Platform commission rates and restaurant entry on delivery apps",
+      "field": "产业组织/平台经济",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "This study exploits quasi-experimental variation to estimate how platform commission rates and restaurant entry on delivery apps affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "Using panel microdata, this paper shows that the effects of platform commission rates and restaurant entry on delivery apps differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "The paper studies how local institutions mediate responses to platform commission rates and restaurant entry on delivery apps, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "This study exploits quasi-experimental variation to estimate how platform commission rates and restaurant entry on delivery apps affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "Using panel microdata, this paper shows that the effects of platform commission rates and restaurant entry on delivery apps differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "The paper studies how local institutions mediate responses to platform commission rates and restaurant entry on delivery apps, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Platform commission rates and restaurant entry on delivery apps",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_011"
+  },
+  {
+    "id": "rw_012",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on State-owned bank credit expansion and productivity growth.",
+    "input": {
+      "topic": "State-owned bank credit expansion and productivity growth",
+      "field": "宏观经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on State-owned bank credit expansion and productivity growth",
+          "abstract": "This study exploits quasi-experimental variation to estimate how state-owned bank credit expansion and productivity growth affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of State-owned bank credit expansion and productivity growth",
+          "abstract": "Using panel microdata, this paper shows that the effects of state-owned bank credit expansion and productivity growth differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and State-owned bank credit expansion and productivity growth",
+          "abstract": "The paper studies how local institutions mediate responses to state-owned bank credit expansion and productivity growth, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to State-owned bank credit expansion and productivity growth",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of State-owned bank credit expansion and productivity growth",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on State-owned bank credit expansion and productivity growth",
+          "abstract": "This study exploits quasi-experimental variation to estimate how state-owned bank credit expansion and productivity growth affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of State-owned bank credit expansion and productivity growth",
+          "abstract": "Using panel microdata, this paper shows that the effects of state-owned bank credit expansion and productivity growth differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and State-owned bank credit expansion and productivity growth",
+          "abstract": "The paper studies how local institutions mediate responses to state-owned bank credit expansion and productivity growth, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to State-owned bank credit expansion and productivity growth",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of State-owned bank credit expansion and productivity growth",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_012"
+  },
+  {
+    "id": "rw_013",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Vocational training subsidies and displaced worker reemployment.",
+    "input": {
+      "topic": "Vocational training subsidies and displaced worker reemployment",
+      "field": "劳动经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Vocational training subsidies and displaced worker reemployment",
+          "abstract": "This study exploits quasi-experimental variation to estimate how vocational training subsidies and displaced worker reemployment affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Vocational training subsidies and displaced worker reemployment",
+          "abstract": "Using panel microdata, this paper shows that the effects of vocational training subsidies and displaced worker reemployment differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Vocational training subsidies and displaced worker reemployment",
+          "abstract": "The paper studies how local institutions mediate responses to vocational training subsidies and displaced worker reemployment, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Vocational training subsidies and displaced worker reemployment",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Vocational training subsidies and displaced worker reemployment",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Vocational training subsidies and displaced worker reemployment",
+          "abstract": "This study exploits quasi-experimental variation to estimate how vocational training subsidies and displaced worker reemployment affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Vocational training subsidies and displaced worker reemployment",
+          "abstract": "Using panel microdata, this paper shows that the effects of vocational training subsidies and displaced worker reemployment differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Vocational training subsidies and displaced worker reemployment",
+          "abstract": "The paper studies how local institutions mediate responses to vocational training subsidies and displaced worker reemployment, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Vocational training subsidies and displaced worker reemployment",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Vocational training subsidies and displaced worker reemployment",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_013"
+  },
+  {
+    "id": "rw_014",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Foreign direct investment and supplier upgrading in host regions.",
+    "input": {
+      "topic": "Foreign direct investment and supplier upgrading in host regions",
+      "field": "国际贸易",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "This study exploits quasi-experimental variation to estimate how foreign direct investment and supplier upgrading in host regions affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "Using panel microdata, this paper shows that the effects of foreign direct investment and supplier upgrading in host regions differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "The paper studies how local institutions mediate responses to foreign direct investment and supplier upgrading in host regions, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "This study exploits quasi-experimental variation to estimate how foreign direct investment and supplier upgrading in host regions affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "Using panel microdata, this paper shows that the effects of foreign direct investment and supplier upgrading in host regions differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "The paper studies how local institutions mediate responses to foreign direct investment and supplier upgrading in host regions, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Foreign direct investment and supplier upgrading in host regions",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_014"
+  },
+  {
+    "id": "rw_015",
+    "task": "related_work",
+    "instruction": "Based on the following 5 paper abstracts, write a coherent Related Work paragraph (200-300 words) for a study on Anti-corruption inspections and municipal land sales.",
+    "input": {
+      "topic": "Anti-corruption inspections and municipal land sales",
+      "field": "政治经济学",
+      "paper_abstracts": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Anti-corruption inspections and municipal land sales",
+          "abstract": "This study exploits quasi-experimental variation to estimate how anti-corruption inspections and municipal land sales affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Anti-corruption inspections and municipal land sales",
+          "abstract": "Using panel microdata, this paper shows that the effects of anti-corruption inspections and municipal land sales differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Anti-corruption inspections and municipal land sales",
+          "abstract": "The paper studies how local institutions mediate responses to anti-corruption inspections and municipal land sales, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Anti-corruption inspections and municipal land sales",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Anti-corruption inspections and municipal land sales",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ],
+      "papers": [
+        {
+          "citation_key": "P1",
+          "title": "Causal Evidence on Anti-corruption inspections and municipal land sales",
+          "abstract": "This study exploits quasi-experimental variation to estimate how anti-corruption inspections and municipal land sales affects firms, households, and local economies, emphasizing identification threats and heterogeneity."
+        },
+        {
+          "citation_key": "P2",
+          "title": "Distributional Consequences of Anti-corruption inspections and municipal land sales",
+          "abstract": "Using panel microdata, this paper shows that the effects of anti-corruption inspections and municipal land sales differ by income, region, and baseline exposure, with implications for inequality and welfare."
+        },
+        {
+          "citation_key": "P3",
+          "title": "Institutions and Anti-corruption inspections and municipal land sales",
+          "abstract": "The paper studies how local institutions mediate responses to anti-corruption inspections and municipal land sales, documenting stronger effects where enforcement capacity and market competition are high."
+        },
+        {
+          "citation_key": "P4",
+          "title": "Dynamic Adjustment to Anti-corruption inspections and municipal land sales",
+          "abstract": "An event-study design reveals gradual adjustment before and after the shock, highlighting anticipation, persistence, and spillover channels."
+        },
+        {
+          "citation_key": "P5",
+          "title": "Measurement and Identification in Studies of Anti-corruption inspections and municipal land sales",
+          "abstract": "The paper compares OLS, IV, difference-in-differences, and synthetic-control approaches and discusses common threats to causal interpretation in applied economics."
+        }
+      ]
+    },
+    "evaluation_focus": [
+      "no_fabricated_citations",
+      "synthesis_not_list",
+      "identification_strategy_mentioned",
+      "contribution_positioned"
+    ],
+    "sample_id": "rw_015"
   }
 ]
