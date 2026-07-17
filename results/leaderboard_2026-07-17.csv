@@ -1,4 +1,4 @@
 模型,Overall,Task1 Related Work,Task2 回归解读,Task3 Introduction,Task4 摘要润色,Task5 研究设计,版本,日期
 Doubao-Pro (ep-m-20260717140443-b2659),4.82,5.00,4.41,5.00,4.90,4.89,rubric-v0.1,2026-07-17
 deepseek-chat,4.62,4.93,4.75,5.00,4.42,4.00,rubric-v0.1,2026-07-17
-GLM-Z1-5.2 (partial 22/75),4.86,4.81,4.90,-,-,-,rubric-v1.0,2026-07-17
+GLM-Z1-5.2 (partial 24/75),4.83,4.81,4.85,-,-,-,rubric-v1.0,2026-07-17
