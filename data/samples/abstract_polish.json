@@ -8,7 +8,14 @@
       "context": "Study uses city-level panel data 2005-2018, DiD design exploiting staggered minimum wage increases across provinces."
     },
     "reference_output": "This paper estimates the employment effects of minimum wage increases in China using city-level panel data spanning 2005 to 2018. Exploiting the staggered timing of provincial minimum wage adjustments in a difference-in-differences framework, we find that a 10% increase in the minimum wage reduces total employment by approximately 1.2%, with effects concentrated among young workers (ages 16–24) and low-skilled workers without tertiary education. The estimated employment elasticity of −0.12 falls within the range documented in the literature for developing economies, though it is larger in magnitude than comparable estimates for the United States. Robustness checks confirm that the results are not driven by pre-existing differential trends, selective compliance, or concurrent policy changes. These findings suggest that minimum wage policy in China involves a meaningful employment–wage tradeoff, particularly for vulnerable labor market groups, and highlight the importance of targeting complementary labor market policies to offset distributional costs.",
-    "evaluation_focus": ["precision_of_numbers", "passive_voice_appropriate", "no_colloquial_language", "contribution_clear", "structure_background_method_finding_implication"]
+    "evaluation_focus": [
+      "precision_of_numbers",
+      "passive_voice_appropriate",
+      "no_colloquial_language",
+      "contribution_clear",
+      "structure_background_method_finding_implication"
+    ],
+    "sample_id": "abs_001"
   },
   {
     "id": "abs_002",
@@ -19,7 +26,14 @@
       "context": "Study uses CFPS rural sample 2010-2018, instruments education with cohort exposure to 1986 Compulsory Education Law."
     },
     "reference_output": "This paper examines the causal effect of education on adult health outcomes among rural residents in China. Using six waves of the China Family Panel Studies (CFPS) from 2010 to 2018, we instrument individual years of schooling with cohort-level exposure to the 1986 Compulsory Education Law, which induced sharp increases in educational attainment among affected birth cohorts. OLS estimates indicate a positive association between education and self-reported health, physical functioning, and chronic disease prevalence, but may be upward-biased by unobserved health endowments. Two-stage least squares estimates confirm a positive and statistically significant causal effect: one additional year of schooling reduces the probability of reporting poor health by 3.8 percentage points (p < 0.01). Effects are larger for women and households in below-median income villages. These findings underscore the health externalities of educational investment and suggest that policies expanding schooling access in rural China can yield compounding welfare gains beyond labor market returns.",
-    "evaluation_focus": ["iv_methodology_clear", "ols_endogeneity_acknowledged", "magnitude_reported", "heterogeneity_mentioned", "policy_implication_concise"]
+    "evaluation_focus": [
+      "iv_methodology_clear",
+      "ols_endogeneity_acknowledged",
+      "magnitude_reported",
+      "heterogeneity_mentioned",
+      "policy_implication_concise"
+    ],
+    "sample_id": "abs_002"
   },
   {
     "id": "abs_003",
@@ -30,6 +44,289 @@
       "context": "Study uses Chinese Industrial Survey data 2000-2007 merged with HS-level tariff schedules, exploits WTO accession as source of tariff variation."
     },
     "reference_output": "This paper examines the effect of trade liberalization on firm-level innovation in China, exploiting China's accession to the World Trade Organization in 2001 as a source of plausibly exogenous variation in import tariff schedules. Merging the Chinese Annual Industrial Survey (2000–2007) with product-level tariff data, we construct firm-level exposure to tariff reductions and estimate their effect on patenting activity and R&D expenditure. We find that a 10 percentage point reduction in input tariffs increases patent filings by 6.3% and R&D intensity by 0.4 percentage points. The innovation response is significantly stronger among firms operating in industries with initially higher domestic competition, consistent with the escape-competition mechanism proposed by Aghion et al. (2005). Effects are driven primarily by firms in coastal provinces with pre-existing export capacity, suggesting that global market access amplifies innovation incentives. These findings contribute to the debate on trade policy and technological upgrading, with implications for industrial policy design in large developing economies.",
-    "evaluation_focus": ["mechanism_cited", "magnitude_precision", "heterogeneity_reported", "contribution_to_literature", "no_colloquial_phrases"]
+    "evaluation_focus": [
+      "mechanism_cited",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "contribution_to_literature",
+      "no_colloquial_phrases"
+    ],
+    "sample_id": "abs_003"
+  },
+  {
+    "id": "ap_004",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about fiscal consolidation and firm investment. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with macro panel DID, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: fiscal consolidation and firm investment",
+        "Preserve the method: macro panel DID",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses macro panel DID with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_004"
+  },
+  {
+    "id": "ap_005",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about commuting time and worker mental health. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with labor economics IV, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: commuting time and worker mental health",
+        "Preserve the method: labor economics IV",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses labor economics IV with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_005"
+  },
+  {
+    "id": "ap_006",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about import competition and markups. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with trade exposure shift-share, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: import competition and markups",
+        "Preserve the method: trade exposure shift-share",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses trade exposure shift-share with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_006"
+  },
+  {
+    "id": "ap_007",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about voter turnout and targeted transfers. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with political economy RDD, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: voter turnout and targeted transfers",
+        "Preserve the method: political economy RDD",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses political economy RDD with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_007"
+  },
+  {
+    "id": "ap_008",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about synthetic control estimates of free-trade zones. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with method application, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: synthetic control estimates of free-trade zones",
+        "Preserve the method: method application",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses method application with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_008"
+  },
+  {
+    "id": "ap_009",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about school feeding and child nutrition. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with development RCT, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: school feeding and child nutrition",
+        "Preserve the method: development RCT",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses development RCT with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_009"
+  },
+  {
+    "id": "ap_010",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about water pollution regulation and plant exit. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with environmental DID, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: water pollution regulation and plant exit",
+        "Preserve the method: environmental DID",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses environmental DID with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_010"
+  },
+  {
+    "id": "ap_011",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about platform price parity clauses and consumer welfare. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with IO structural estimation, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: platform price parity clauses and consumer welfare",
+        "Preserve the method: IO structural estimation",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses IO structural estimation with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_011"
+  },
+  {
+    "id": "ap_012",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about central bank communication and inflation expectations. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with macro text analysis, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: central bank communication and inflation expectations",
+        "Preserve the method: macro text analysis",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses macro text analysis with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_012"
+  },
+  {
+    "id": "ap_013",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about gig work and household risk sharing. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with labor panel data, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: gig work and household risk sharing",
+        "Preserve the method: labor panel data",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses labor panel data with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_013"
+  },
+  {
+    "id": "ap_014",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about export VAT rebates and firm survival. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with international trade DID, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: export VAT rebates and firm survival",
+        "Preserve the method: international trade DID",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses international trade DID with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_014"
+  },
+  {
+    "id": "ap_015",
+    "task": "abstract_polish",
+    "instruction": "Polish the following economics paper abstract into top-journal style. Improve academic rigor, English expression, and structure. Keep the core content intact. Target length: 150-180 words.",
+    "input": {
+      "draft_abstract": "This paper is about bureaucrat rotation and local corruption. We use data from many places and years and run regressions. The main result is that the effect is important and statistically significant. We also find some groups have bigger effects than others. We try to solve endogeneity with political economy event study, and we do robustness checks. The paper is useful because policy makers care about this issue.",
+      "constraints": [
+        "Mention the topic: bureaucrat rotation and local corruption",
+        "Preserve the method: political economy event study",
+        "Report a clear causal estimate in polished wording",
+        "Include heterogeneity and policy implications without overclaiming"
+      ],
+      "context": "Study uses political economy event study with administrative or survey panel data and multiple robustness checks."
+    },
+    "evaluation_focus": [
+      "no_colloquial_language",
+      "methodology_clear",
+      "magnitude_precision",
+      "heterogeneity_reported",
+      "policy_implication_concise"
+    ],
+    "sample_id": "ap_015"
   }
 ]

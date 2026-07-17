@@ -17,13 +17,32 @@
         "City-level macro: NBS prefecture statistical yearbooks for GDP, population, income"
       ],
       "threats_and_responses": [
-        {"threat": "Anticipation effects: prices may rise before the station opens", "response": "Include leads of the treatment indicator in the event-study specification; if pre-trends are significant, adjust the treatment date to the announcement date."},
-        {"threat": "Parallel trends violation: treated neighborhoods may have been on different pre-trends", "response": "Conduct event-study plots for 5+ pre-periods; use the Callaway-Sant'Anna (2021) estimator if staggered rollout creates heterogeneous treatment timing."},
-        {"threat": "Displacement effects: HSR may attract residents from elsewhere in the city, inflating nearby prices while deflating farther neighborhoods", "response": "Test for spatial spillovers using a spatial-lag model; define 'far control' neighborhoods carefully to exclude areas that are plausible destinations for displaced demand."},
-        {"threat": "Data quality: scraped listing prices differ from transaction prices", "response": "If possible, supplement with official transaction records from local housing bureaus (房管局); report results for both measures."}
+        {
+          "threat": "Anticipation effects: prices may rise before the station opens",
+          "response": "Include leads of the treatment indicator in the event-study specification; if pre-trends are significant, adjust the treatment date to the announcement date."
+        },
+        {
+          "threat": "Parallel trends violation: treated neighborhoods may have been on different pre-trends",
+          "response": "Conduct event-study plots for 5+ pre-periods; use the Callaway-Sant'Anna (2021) estimator if staggered rollout creates heterogeneous treatment timing."
+        },
+        {
+          "threat": "Displacement effects: HSR may attract residents from elsewhere in the city, inflating nearby prices while deflating farther neighborhoods",
+          "response": "Test for spatial spillovers using a spatial-lag model; define 'far control' neighborhoods carefully to exclude areas that are plausible destinations for displaced demand."
+        },
+        {
+          "threat": "Data quality: scraped listing prices differ from transaction prices",
+          "response": "If possible, supplement with official transaction records from local housing bureaus (房管局); report results for both measures."
+        }
       ]
     },
-    "evaluation_focus": ["identification_credibility", "data_feasibility", "threat_completeness", "iv_validity_discussed", "actionability"]
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "iv_validity_discussed",
+      "actionability"
+    ],
+    "sample_id": "rd_001"
   },
   {
     "id": "rd_002",
@@ -43,13 +62,32 @@
         "Consumption composition: WeChat/Alipay transaction categories if consented data sharing is feasible"
       ],
       "threats_and_responses": [
-        {"threat": "Hawthorne effect: participants in the reduced-usage group may change behavior due to awareness of being observed", "response": "Use a cross-over design where the control group reduces usage in week 3-4; compare within-person changes."},
-        {"threat": "Compliance: participants assigned to reduce usage may not comply", "response": "Measure actual screen time as a continuous variable and use assigned condition as an instrument for actual usage (IV within the experiment)."},
-        {"threat": "Selection into platform use is correlated with baseline consumption preferences", "response": "In the observational design, control for pre-treatment consumption levels and use the staggered rollout as the source of variation; conduct balance tests across rollout cohorts."},
-        {"threat": "Spillovers: reduced usage by one person may affect purchases influenced by peer social comparison on the platform", "response": "Measure social network overlap among participants and test whether effects vary with network density."}
+        {
+          "threat": "Hawthorne effect: participants in the reduced-usage group may change behavior due to awareness of being observed",
+          "response": "Use a cross-over design where the control group reduces usage in week 3-4; compare within-person changes."
+        },
+        {
+          "threat": "Compliance: participants assigned to reduce usage may not comply",
+          "response": "Measure actual screen time as a continuous variable and use assigned condition as an instrument for actual usage (IV within the experiment)."
+        },
+        {
+          "threat": "Selection into platform use is correlated with baseline consumption preferences",
+          "response": "In the observational design, control for pre-treatment consumption levels and use the staggered rollout as the source of variation; conduct balance tests across rollout cohorts."
+        },
+        {
+          "threat": "Spillovers: reduced usage by one person may affect purchases influenced by peer social comparison on the platform",
+          "response": "Measure social network overlap among participants and test whether effects vary with network density."
+        }
       ]
     },
-    "evaluation_focus": ["feasibility_given_resources", "identification_creative", "data_sources_realistic", "within_reach_for_ms_student", "threat_completeness"]
+    "evaluation_focus": [
+      "feasibility_given_resources",
+      "identification_creative",
+      "data_sources_realistic",
+      "within_reach_for_ms_student",
+      "threat_completeness"
+    ],
+    "sample_id": "rd_002"
   },
   {
     "id": "rd_003",
@@ -70,12 +108,283 @@
         "County controls: NBS county statistical yearbooks (area, population, distance to prefecture capital, terrain ruggedness from SRTM DEM)"
       ],
       "threats_and_responses": [
-        {"threat": "Positive selection: Alibaba designates already-successful e-commerce areas", "response": "Use the DiD design with not-yet-treated counties; explicitly test whether pre-designation trends in poverty differ between future treated and control counties."},
-        {"threat": "Broadband instrument exclusion restriction: early broadband may predict local economic development through channels other than e-commerce", "response": "Control for baseline economic variables interacted with post-period indicators; test the instrument's effect on outcomes in pre-e-commerce years as a placebo."},
-        {"threat": "SUTVA violation: e-commerce in one county may displace business from neighboring counties", "response": "Construct a measure of neighboring county Taobao Village intensity and include it as a control; estimate spatial spillover effects using a spatial-lag model."},
-        {"threat": "Poverty measurement error: official poverty statistics may be manipulated near the designated poverty line", "response": "Use nighttime light and consumption survey measures as alternative outcomes to triangulate."}
+        {
+          "threat": "Positive selection: Alibaba designates already-successful e-commerce areas",
+          "response": "Use the DiD design with not-yet-treated counties; explicitly test whether pre-designation trends in poverty differ between future treated and control counties."
+        },
+        {
+          "threat": "Broadband instrument exclusion restriction: early broadband may predict local economic development through channels other than e-commerce",
+          "response": "Control for baseline economic variables interacted with post-period indicators; test the instrument's effect on outcomes in pre-e-commerce years as a placebo."
+        },
+        {
+          "threat": "SUTVA violation: e-commerce in one county may displace business from neighboring counties",
+          "response": "Construct a measure of neighboring county Taobao Village intensity and include it as a control; estimate spatial spillover effects using a spatial-lag model."
+        },
+        {
+          "threat": "Poverty measurement error: official poverty statistics may be manipulated near the designated poverty line",
+          "response": "Use nighttime light and consumption survey measures as alternative outcomes to triangulate."
+        }
       ]
     },
-    "evaluation_focus": ["heterogeneity_robust_estimator", "iv_relevance_exclusion", "data_granularity", "spatial_spillover_awareness", "poverty_measurement_robustness"]
+    "evaluation_focus": [
+      "heterogeneity_robust_estimator",
+      "iv_relevance_exclusion",
+      "data_granularity",
+      "spatial_spillover_awareness",
+      "poverty_measurement_robustness"
+    ],
+    "sample_id": "rd_003"
+  },
+  {
+    "id": "rd_004",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether fiscal transfers to local governments stimulate private investment",
+      "outcome_candidates": "local investment, firm entry, employment",
+      "treatment": "formula-based transfer shocks",
+      "constraints": "Need subnational fiscal data and concern about endogenous grant allocation",
+      "research_idea": "I want to study whether fiscal transfers to local governments stimulate private investment",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_004"
+  },
+  {
+    "id": "rd_005",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether adult retraining programs help workers displaced by automation",
+      "outcome_candidates": "reemployment, wages, job stability",
+      "treatment": "eligibility for retraining vouchers",
+      "constraints": "Limited access to administrative employment histories",
+      "research_idea": "I want to study whether adult retraining programs help workers displaced by automation",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_005"
+  },
+  {
+    "id": "rd_006",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether exchange-rate depreciation increases exporter product quality",
+      "outcome_candidates": "unit values, quality indices, export survival",
+      "treatment": "exchange-rate shocks by destination exposure",
+      "constraints": "Need customs data and product-level controls",
+      "research_idea": "I want to study whether exchange-rate depreciation increases exporter product quality",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_006"
+  },
+  {
+    "id": "rd_007",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether competitive mayoral selection improves public service delivery",
+      "outcome_candidates": "school quality, road quality, fiscal transparency",
+      "treatment": "close appointment or election outcomes",
+      "constraints": "Political selection is endogenous",
+      "research_idea": "I want to study whether competitive mayoral selection improves public service delivery",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_007"
+  },
+  {
+    "id": "rd_008",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "how to estimate peer effects in classroom achievement",
+      "outcome_candidates": "test scores, attendance, aspirations",
+      "treatment": "random classroom assignment or cohort composition",
+      "constraints": "Reflection problem and sorting are central",
+      "research_idea": "I want to study how to estimate peer effects in classroom achievement",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_008"
+  },
+  {
+    "id": "rd_009",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether rural health insurance lowers catastrophic expenditure",
+      "outcome_candidates": "out-of-pocket spending, medical debt, care use",
+      "treatment": "staggered insurance expansion",
+      "constraints": "Claims data may miss informal payments",
+      "research_idea": "I want to study whether rural health insurance lowers catastrophic expenditure",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_009"
+  },
+  {
+    "id": "rd_010",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether carbon pricing accelerates green patenting",
+      "outcome_candidates": "green patents, R&D, emissions intensity",
+      "treatment": "ETS pilot coverage",
+      "constraints": "Policy anticipation and spillovers across provinces",
+      "research_idea": "I want to study whether carbon pricing accelerates green patenting",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_010"
+  },
+  {
+    "id": "rd_011",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether algorithmic recommendations increase market concentration on platforms",
+      "outcome_candidates": "seller sales shares, entry, prices",
+      "treatment": "algorithm rollout or A/B exposure",
+      "constraints": "Platform data access is partial",
+      "research_idea": "I want to study whether algorithmic recommendations increase market concentration on platforms",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_011"
+  },
+  {
+    "id": "rd_012",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether monetary tightening reallocates credit away from zombie firms",
+      "outcome_candidates": "loan growth, investment, exit",
+      "treatment": "bank exposure to reserve-requirement shocks",
+      "constraints": "Bank-firm matching is nonrandom",
+      "research_idea": "I want to study whether monetary tightening reallocates credit away from zombie firms",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_012"
+  },
+  {
+    "id": "rd_013",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether childcare availability increases maternal labor supply",
+      "outcome_candidates": "employment, hours, earnings",
+      "treatment": "new childcare center openings",
+      "constraints": "Facility placement targets high-demand neighborhoods",
+      "research_idea": "I want to study whether childcare availability increases maternal labor supply",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_013"
+  },
+  {
+    "id": "rd_014",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether FDI restrictions reduce domestic innovation spillovers",
+      "outcome_candidates": "patents, productivity, supplier upgrading",
+      "treatment": "policy change in restricted industries",
+      "constraints": "Simultaneous industrial-policy changes",
+      "research_idea": "I want to study whether FDI restrictions reduce domestic innovation spillovers",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_014"
+  },
+  {
+    "id": "rd_015",
+    "task": "research_design",
+    "instruction": "Suggest an empirical research design for the following economics research idea. Include: (1) research question formulation, (2) identification strategy, (3) data sources, (4) potential threats to validity and how to address them.",
+    "input": {
+      "idea": "whether anti-corruption inspections reduce land-market distortions",
+      "outcome_candidates": "land prices, auction competition, fiscal revenue",
+      "treatment": "inspection timing and exposure",
+      "constraints": "Inspection timing may target problematic cities",
+      "research_idea": "I want to study whether anti-corruption inspections reduce land-market distortions",
+      "researcher_background": "Applied economics researcher familiar with panel data, causal inference, and administrative-data constraints."
+    },
+    "evaluation_focus": [
+      "identification_credibility",
+      "data_feasibility",
+      "threat_completeness",
+      "mechanism_tests",
+      "actionability"
+    ],
+    "sample_id": "rd_015"
   }
 ]

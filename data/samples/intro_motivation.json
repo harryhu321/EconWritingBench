@@ -14,7 +14,14 @@
       ]
     },
     "reference_output": "China's manufacturing sector employs over 100 million urban workers and contributes nearly 28% of global manufacturing output, making it one of the most consequential labor markets for the global economy (World Bank, 2022). Yet Chinese manufacturing cities also rank among the most polluted in the world: average urban PM2.5 concentrations reached 47 μg/m³ in 2015—nearly five times the World Health Organization guideline of 10 μg/m³—and show considerable day-to-day volatility driven by coal combustion, industrial emissions, and meteorological conditions. If pollution systematically impairs worker performance, the economic costs of China's pollution burden extend well beyond documented health expenditures to encompass suppressed aggregate productivity.\n\nDespite a growing literature on pollution and health in China (e.g., Chen et al., 2013; Ebenstein et al., 2017), causal evidence linking ambient pollution to labor productivity in Chinese manufacturing remains scarce. Existing productivity studies either focus on agricultural or service-sector workers in the United States and Europe (Graff Zivin and Neidell, 2012; Chang et al., 2019), or rely on correlational designs that cannot rule out confounding from local economic cycles. This paper addresses these gaps by exploiting wind direction instruments—which generate plausibly exogenous variation in local PM2.5 unrelated to local economic activity—to identify the causal effect of pollution on daily factory output in a panel of 183 manufacturing firms across 24 Chinese cities over 2014–2019.",
-    "evaluation_focus": ["problem_importance", "literature_gap", "research_objective_clear", "hook_quality", "academic_tone"]
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "hook_quality",
+      "academic_tone"
+    ],
+    "sample_id": "intro_001"
   },
   {
     "id": "intro_002",
@@ -31,7 +38,14 @@
       ]
     },
     "reference_output": "China faces an acute demographic challenge. The total fertility rate fell to 1.09 in 2022—among the lowest ever recorded for a major economy—despite successive relaxations of the one-child policy in 2015 and 2021 (National Bureau of Statistics, 2023). Policymakers have proposed a range of pro-natalist interventions, from childcare subsidies to extended parental leave, yet fertility has continued to decline. Identifying the structural determinants of this trend is essential for designing effective policy responses.\n\nRising housing costs represent a leading candidate explanation. Average house prices in China's tier-1 cities increased by more than 300% between 2005 and 2020, and housing now constitutes the single largest expenditure category in urban household budgets. Economic theory provides competing predictions: higher house prices may reduce fertility by raising the opportunity cost of having children and crowding out household resources; alternatively, homeowners may experience positive wealth effects that relax liquidity constraints on family formation. Empirical evidence from Western contexts suggests a predominantly negative relationship (Laeven and Popov, 2017; Dettling and Kearney, 2014), but these findings may not generalize to China, where homeownership rates are unusually high (over 90% in urban areas), mortgage structures differ, and cultural attitudes toward housing and childbearing interact in distinct ways. This paper exploits city-level land supply restrictions as an instrument for local house price variation to identify the causal effect of housing affordability on completed fertility and birth spacing among urban Chinese households.",
-    "evaluation_focus": ["policy_relevance", "theory_mechanism", "literature_gap", "instrument_previewed", "hook_quality"]
+    "evaluation_focus": [
+      "policy_relevance",
+      "theory_mechanism",
+      "literature_gap",
+      "instrument_previewed",
+      "hook_quality"
+    ],
+    "sample_id": "intro_002"
   },
   {
     "id": "intro_003",
@@ -48,6 +62,253 @@
       ]
     },
     "reference_output": "The diffusion of mobile payment platforms—most notably Alipay and WeChat Pay—has transformed retail commerce in China at a pace unmatched elsewhere: by 2022, the country processed over ¥526 trillion in mobile transactions annually, equivalent to roughly 45 times GDP (People's Bank of China, 2023). Proponents argue that frictionless digital payments expand financial inclusion by connecting underbanked households to credit markets, enabling small merchants to participate in formal commerce, and reducing transaction costs disproportionately for low-income users. Critics, however, warn of a digital divide: with mobile payment penetration standing at 86% among urban adults but only 54% among rural adults, access to the platform's complementary services—consumer credit, investment products, price comparison—may systematically advantage already-advantaged households.\n\nWhether fintech adoption ultimately narrows or widens consumption inequality is, therefore, an empirical question with first-order policy implications, yet causal evidence remains scarce. Existing work documents correlations between fintech indicators and economic outcomes (Hau et al., 2019; Li et al., 2021) but does not credibly address the endogeneity of platform adoption—households with higher consumption capacity are more likely to adopt digital payments in the first place. This paper exploits the staggered geographic rollout of Alipay's offline QR-code payment network between 2014 and 2019 as an instrument for local payment adoption to estimate the causal effect of mobile payment penetration on the consumption Gini across Chinese counties.",
-    "evaluation_focus": ["two_sided_argument", "endogeneity_previewed", "instrument_hinted", "literature_gap", "policy_stakes"]
+    "evaluation_focus": [
+      "two_sided_argument",
+      "endogeneity_previewed",
+      "instrument_hinted",
+      "literature_gap",
+      "policy_stakes"
+    ],
+    "sample_id": "intro_003"
+  },
+  {
+    "id": "im_004",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "How do fiscal rules affect local government debt and infrastructure spending?",
+      "background": "This topic sits at the intersection of 宏观经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_004"
+  },
+  {
+    "id": "im_005",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Do apprenticeship programs improve youth employment and wages?",
+      "background": "This topic sits at the intersection of 劳动经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_005"
+  },
+  {
+    "id": "im_006",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Does exchange-rate volatility reduce small exporters’ market entry?",
+      "background": "This topic sits at the intersection of 国际贸易 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_006"
+  },
+  {
+    "id": "im_007",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Do anti-corruption audits change public procurement efficiency?",
+      "background": "This topic sits at the intersection of 政治经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_007"
+  },
+  {
+    "id": "im_008",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Can RDD estimates from school cutoffs recover long-run human-capital returns?",
+      "background": "This topic sits at the intersection of 计量方法 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_008"
+  },
+  {
+    "id": "im_009",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Do health insurance expansions reduce medical impoverishment?",
+      "background": "This topic sits at the intersection of 发展经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_009"
+  },
+  {
+    "id": "im_010",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Do carbon border adjustments shift emissions across countries?",
+      "background": "This topic sits at the intersection of 环境经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_010"
+  },
+  {
+    "id": "im_011",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "How do platform ranking algorithms affect seller competition?",
+      "background": "This topic sits at the intersection of 产业组织/平台经济 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_011"
+  },
+  {
+    "id": "im_012",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Does monetary tightening affect zombie-firm survival?",
+      "background": "This topic sits at the intersection of 宏观经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_012"
+  },
+  {
+    "id": "im_013",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Do childcare centers raise mothers’ labor-force participation?",
+      "background": "This topic sits at the intersection of 劳动经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_013"
+  },
+  {
+    "id": "im_014",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Does FDI screening affect technology transfer to domestic firms?",
+      "background": "This topic sits at the intersection of 国际贸易 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_014"
+  },
+  {
+    "id": "im_015",
+    "task": "intro_motivation",
+    "instruction": "Write the motivation paragraph(s) for the Introduction of an economics paper (200-250 words). The paragraph should establish why the research question matters, identify the gap in the existing literature, and end with a clear research objective.",
+    "input": {
+      "research_question": "Do local elections discipline pollution enforcement?",
+      "background": "This topic sits at the intersection of 政治经济学 and applied microeconometrics. Policy variation across regions and years creates opportunities for causal inference, but existing evidence is fragmented and often correlational.",
+      "gap_hint": "Prior studies document correlations but provide limited evidence on mechanisms, heterogeneity, and external validity in developing-economy settings.",
+      "intended_contribution": "The paper combines administrative panel data with a quasi-experimental design to estimate causal effects, test mechanisms, and quantify distributional consequences.",
+      "style": "top-field economics journal; precise, policy-relevant, and not overstated"
+    },
+    "evaluation_focus": [
+      "problem_importance",
+      "literature_gap",
+      "research_objective_clear",
+      "identification_previewed",
+      "academic_tone"
+    ],
+    "sample_id": "im_015"
   }
 ]
